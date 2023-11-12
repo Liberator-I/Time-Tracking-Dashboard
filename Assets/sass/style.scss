@@ -175,3 +175,66 @@ $selfCare: hsl(43, 84%, 65%); /* Soft Orange */
 .time-5 { background-color: $social; }
 .time-6 { background-color: $selfCare; }
 
+@media only screen and (max-width: 810px) {
+    .container {
+        height: auto;
+    }
+
+    .dashboard-wrapper {
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin: 3rem 0 3rem 0;
+    }
+
+    .report-wrapper {
+        .options {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .option-1, .option-2, .option-3 {
+                flex: 1;
+                margin-bottom: 0px;
+                padding: 2px 4px;
+            }
+        }
+    }
+
+    .details-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img-wrapper img {
+            margin-right: 20px;
+            margin-bottom: 0px;
+        }
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+
+            .user-name {
+                font-size: 1.5rem;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .time-details {
+        .time-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .time-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
