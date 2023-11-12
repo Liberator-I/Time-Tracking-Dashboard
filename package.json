@@ -1,0 +1,15 @@
+{
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
+  "description": "A time tracking dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Liberator",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

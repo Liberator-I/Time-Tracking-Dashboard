@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Very Dark Blue */
+/* Blue */
+/* White */
+/* Dark Blue */
+/* Desaturated Blue */
+/* Desaturated Blue */
+/* Pale Blue */
+/* Pale Blue */
+/* Card header bgColors */
+/* Light Red */
+/* Soft Blue */
+/* Light Red */
+/* Lime Green */
+/* Violet */
+/* Soft Orange */
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-wrapper {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+}
+
+.report-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+.report-wrapper .options {
+  padding: 1.5rem;
+  list-style: none;
+  color: hsl(235, 45%, 61%);
+  display: flex;
+  flex-direction: column;
+}
+.report-wrapper .options .option-1, .report-wrapper .options .option-2 {
+  margin-bottom: 1rem;
+}
+.report-wrapper .options .option:hover {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.active {
+  color: hsl(0, 0%, 100%);
+}
+
+.user-wrapper {
+  padding: 1.5rem;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+}
+.user-wrapper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid hsl(0, 0%, 100%);
+  margin-bottom: 1.5rem;
+}
+.user-wrapper .report {
+  font-size: 12px;
+  color: hsl(236, 100%, 87%);
+}
+.user-wrapper .user-name {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  margin-bottom: 3.5rem;
+}
+
+.details-wrapper {
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.time-wrapper {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  border-radius: 10px 10px 13px 13px;
+  position: relative;
+}
+.time-wrapper .icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 15px;
+}
+.time-wrapper .ex-icon {
+  width: 81px;
+  height: 51px;
+  top: 0px;
+}
+.time-wrapper .time-details {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  z-index: 2;
+  grid-row: 2/3;
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+.time-wrapper .time-details .time-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.time-wrapper .time-details .time-title .title {
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  font-size: 500;
+}
+.time-wrapper .time-details .time-title img {
+  align-self: center;
+}
+.time-wrapper .time-details .time-title img:hover {
+  cursor: pointer;
+}
+.time-wrapper .time-details .time {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+}
+.time-wrapper .time-details .last-time {
+  font-size: 13px;
+  color: hsl(236, 100%, 87%);
+}
+.time-wrapper .time-details:hover {
+  background-color: hsl(235, 45%, 40%);
+  cursor: pointer;
+}
+
+.time-1 {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.time-2 {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.time-3 {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.time-4 {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.time-5 {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.time-6 {
+  background-color: hsl(43, 84%, 65%);
+}
+
+/*# sourceMappingURL=style.css.map */
