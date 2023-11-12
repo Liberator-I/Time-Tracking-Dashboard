@@ -235,6 +235,12 @@ $selfCare: hsl(43, 84%, 65%); /* Soft Orange */
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            .time {
+                font-size: 2.5rem;
+            }
         }
+
+        
     }
 }

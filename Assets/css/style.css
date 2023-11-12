@@ -218,6 +218,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  .time-details .time-content .time {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

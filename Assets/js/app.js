@@ -11,40 +11,6 @@ const src = ['./Assets/img/icon-work.svg', './Assets/img/icon-play.svg', './Asse
 // Storing data.json in variable
 const info = 'Assets/js/data.json';
 
-window.addEventListener('DOMContentLoaded', () => {
-    // Fetch Request
-    fetch(info)
-    .then(response => response.json())
-    .then(data => {
-        let output = "";
-        let num = 0;
-        let x = -1;
-        for (let item of data) {
-            num++;
-            x++;
-            output += `
-            <div class="time-wrapper time-${num}">
-                <img class="icon" src="${src[x]}" alt="">
-                <div class="time-details">
-                    <div class="time-title work">
-                        <p class="title">${item.title}</p>
-                        <img class="ellipsis" src="Assets/img/icon-ellipsis.svg" alt="Ellipsis icon">
-                    </div>
-                    <div class="time-content">
-                    <p class="time"><span class="noCurrent">${item.timeframes.weekly.current}</span>hrs</p>
-                    <p class="last-time">Last Week - <span class="noPrevious">${item.timeframes.weekly.previous}</span>hrs</p>
-                    </div>
-                </div>
-            </div>
-            `;
-        }
-        container.innerHTML = output;
-    })
-    .catch(err => {
-        console.log(err);
-    })
-});
-
 let displayDaily = () => {
     fetch(info)
     .then(response => response.json())
@@ -53,7 +19,6 @@ let displayDaily = () => {
         let num = 0;
         let x = -1;
         for (let item of data) {
-            // console.log(item.src.work)
             num++;
             x++;
             output += `
@@ -87,7 +52,6 @@ let displayData = () => {
         let num = 0;
         let x = -1;
         for (let item of data) {
-            // console.log(item.src.work)
             num++;
             x++;
             output += `
@@ -121,7 +85,6 @@ let displayMonthly = () => {
         let num = 0;
         let x = -1;
         for (let item of data) {
-            // console.log(item.src.work)
             num++;
             x++;
             output += `
@@ -146,6 +109,8 @@ let displayMonthly = () => {
         console.log(err);
     });
 }
+
+window.addEventListener('DOMContentLoaded', displayData);
 
 // Toggle active state
 options.forEach(option => {
